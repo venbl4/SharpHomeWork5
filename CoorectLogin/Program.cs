@@ -45,8 +45,8 @@ namespace CoorectLogin
 
         static void Main(string[] args)
         {
-            Console.WriteLine("Вас приветствует программа проверки корректности логина.");
-            int AmountOfTries = 3;
+            Console.WriteLine("Вас приветствует программа проверки корректности логина.\nУ вас 3 попытки");
+            int NumofTries = 3;
 
             do
             {
@@ -60,18 +60,18 @@ namespace CoorectLogin
                 }
                 else
                 {
-                    AmountOfTries--;
+                    NumofTries--;
                     Console.WriteLine("Неверный ввод логина. \nДолжны быть соблюдены следующие условия:"
                         + "\nдлина строки 2 до 10 символов;"
                         + "\nбуквы только латинского алфавита или цифры;"
                         + "\nцифра не может быть первой."
-                        + Environment.NewLine + "У Вас осталось " + AmountOfTries + "попыток");
+                        + Environment.NewLine + "У Вас осталось " + NumofTries + "попыток");
                 }
 
                
-            } while (AmountOfTries > 0); 
+            } while (NumofTries > 0); 
 
-                if(AmountOfTries == 0)
+                if(NumofTries == 0)
             {
                 Console.WriteLine("У вас не осталось попыток! Приходите в следующий раз.");
             }
